@@ -1,0 +1,31 @@
+.navbar-container {
+  width: 100%;
+  height: 60px;
+  background-color: #8568ff;
+  display: flex;
+}
+
+.main-nav {
+  display: flex;
+  min-width: 45%;
+  max-width: 65%;
+  margin: auto;
+  border: 1px solid green;
+  flex-grow: 1;
+  justify-content: space-between;
+}
+
+.nav {
+  min-width: 15%;
+  border: 1px solid red;
+  margin: auto 0;
+}
+
+.links {
+  text-decoration: none;
+  color: #000;
+}
+
+.links.active {
+  color: white;
+}
