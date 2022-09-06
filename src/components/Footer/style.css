@@ -1,0 +1,24 @@
+.footer-container {
+    background-color: #0D0E43;
+    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 2fr repeat(3,1fr) 2fr ;
+}
+
+.title-footer {
+    background-color: #0D0E43;
+    color: white;
+    font-size:medium;
+}
+
+.categories-footer {
+    background-color: #0D0E43;
+    color: #8A8FB9;
+    font-size: xx-small;
+}
+
+.account-footer {
+    background-color: #0D0E43;
+    color: #8A8FB9;
+    font-size: xx-small;
+}
