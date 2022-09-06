@@ -1,0 +1,27 @@
+.banner-container {
+  background-color: #8568ff;
+  color: #fff;
+  width: 100%;
+  min-height: 20%;
+  display: flex;
+}
+.banner-image {
+  width: 50%;
+}
+.banner-img {
+  object-fit: contain;
+  margin-top: 5%;
+  max-width: 18%;
+  height: auto;
+  border-radius: 5%;
+  box-shadow: 23px -22px 1px 1px #ffffff;
+}
+.banner-title {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.title-banner {
+  margin: auto;
+}

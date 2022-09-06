@@ -4,8 +4,14 @@
   background-color: #8568ff;
   display: flex;
 }
-
+.nav-title {
+  color: #000;
+}
+.nav-span {
+  color: #fff;
+}
 .main-nav {
+  align-items: center;
   display: flex;
   min-width: 45%;
   max-width: 65%;

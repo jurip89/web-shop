@@ -1,0 +1,17 @@
+.prod-img {
+  margin: auto;
+  max-width: 60%;
+  height: auto;
+  border: 1px solid black;
+}
+
+.prod-card {
+  border: 1px solid red;
+  width: 40%;
+  margin: 2% auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+.prod-content {
+  border: 1px solid black;
+}
