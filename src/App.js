@@ -1,7 +1,9 @@
 import { BrowserRouter as Browser, Route, Routes } from "react-router-dom";
 import { Home, Shop, DetailsPage } from "./pages/index";
 
-import { NavBar, Banner, Footer} from "./components/index";
+
+import { NavBar, Banner, Footer } from "./components/index";
+
 
 import "./App.css";
 
