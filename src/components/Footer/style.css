@@ -1,24 +1,40 @@
 .footer-container {
-    background-color: #0D0E43;
-    justify-content: space-between;
-    display: grid;
-    grid-template-columns: 2fr repeat(3,1fr) 2fr ;
+  background-color: #0d0e43;
+  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 2fr repeat(3, 1fr) 2fr;
 }
 
 .title-footer {
-    background-color: #0D0E43;
-    color: white;
-    font-size:medium;
+  background-color: #0d0e43;
+  color: white;
+  font-size: medium;
+
 }
 
 .categories-footer {
-    background-color: #0D0E43;
-    color: #8A8FB9;
-    font-size: xx-small;
+  background-color: #0d0e43;
+  color: #8a8fb9;
+  font-size: xx-small;
 }
 
 .account-footer {
-    background-color: #0D0E43;
-    color: #8A8FB9;
-    font-size: xx-small;
+  background-color: #0d0e43;
+  color: #8a8fb9;
+  font-size: xx-small;
+  display: grid;
+}
+
+.link {
+  color: #fff;
+}
+
+.button {
+  background-color: #fff;
+  border-radius: 60px;
+  border: 2px solid white;
+  padding: 1px;
+  width: 20px;
+  height: 20px;
+  margin: 5%;
 }
