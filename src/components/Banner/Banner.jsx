@@ -8,7 +8,7 @@ const Banner = () => {
       <div className="banner-title">
         <h2 className="title-banner">
           Products for every need,
-          <br /> ar the distance of a click
+          <br /> at the distance of a click
         </h2>
       </div>
       <div className="banner-image">

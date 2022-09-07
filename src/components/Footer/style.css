@@ -2,14 +2,13 @@
   background-color: #0d0e43;
   justify-content: space-between;
   display: grid;
-  grid-template-columns: 2fr repeat(3, 1fr) 2fr;
+  grid-template-columns: 1.5fr repeat(2, 1fr) 1.5fr;
 }
 
 .title-footer {
   background-color: #0d0e43;
   color: white;
   font-size: medium;
-
 }
 
 .categories-footer {

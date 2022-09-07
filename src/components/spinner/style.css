@@ -1,0 +1,20 @@
+.spinner-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.spinner {
+  margin: 10%;
+  width: 120px;
+  height: 120px;
+  border: 5px solid;
+  border-color: black transparent black transparent;
+
+  border-radius: 50%;
+  animation: spin 0.75s ease-in-out infinite;
+}
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

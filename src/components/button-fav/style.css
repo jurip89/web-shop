@@ -1,0 +1,12 @@
+.button-fav {
+  margin: 0.3%;
+  color: #151875;
+  background-color: white;
+  border-radius: 10px;
+  border: 1px solid #1d3178;
+  padding: 1px;
+  width: 80px;
+  height: 30px;
+  font-size: x-small;
+  justify-content: space-around;
+}

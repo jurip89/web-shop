@@ -1,0 +1,12 @@
+.button-cart {
+  margin: 0.3%;
+  background-color: #ff3eb2;
+  color: white;
+  border-radius: 10px;
+  border: 2px solid #ff3eb2;
+  padding: 1px;
+  width: 100px;
+  height: 30px;
+  font-size: x-small;
+  justify-content: space-around;
+}
