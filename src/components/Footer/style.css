@@ -9,24 +9,34 @@
   background-color: #0d0e43;
   color: white;
   font-size: medium;
-  justify-content: center;
+  padding:10px;
 }
 
 .categories-footer {
   background-color: #0d0e43;
   color: #8a8fb9;
-  font-size: xx-small;
+  font-size: small;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+.ul-style {
+  list-style-type: none;
+  padding: 0px;
+  margin: 0;
+
 }
 
 .account-footer {
   background-color: #0d0e43;
   color: #8a8fb9;
-  font-size: xx-small;
+  font-size: small;
   display: grid;
+  padding: 10px;
 }
 
 .link {
-  color: #fff;
+  color: #8A8FB9;
 }
 
 .button {

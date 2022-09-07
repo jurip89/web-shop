@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import "./style.css";
-import { NavLink } from "react-router-dom";
 import axios from "axios";
 import { BsFacebook, BsInstagram, BsTwitter } from "react-icons/bs";
 
@@ -26,7 +25,7 @@ const Footer = () => {
         <div className="title-footer">
           Categories
           <div className="categories-footer">
-            <ul>
+            <ul className="ul-style">
               {categories?.map((category) => (
                 <li key={category?.id}>{category?.title}</li>
               ))}
@@ -36,18 +35,12 @@ const Footer = () => {
         <div className="title-footer">
           My account
           <div className="account-footer">
-            <NavLink to="/discount" className="link">
-              Discount
-            </NavLink>
-            <NavLink to="/returns" className="link">
-              Returns
-            </NavLink>
-            <NavLink to="/ordershistory" className="link">
-              Orders History
-            </NavLink>
-            <NavLink to="/ordertracking" className="link">
-              Order Tracking
-            </NavLink>
+            <ul className="ul-style">
+              <li>Discount</li>
+              <li>Returns</li>
+              <li>Orders History</li>
+              <li>Order Tracking</li>
+            </ul>
           </div>
         </div>
         <div className="title-footer">
