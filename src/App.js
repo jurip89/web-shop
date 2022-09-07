@@ -1,9 +1,7 @@
 import { BrowserRouter as Browser, Route, Routes } from "react-router-dom";
-import { Home, Shop, DetailsPage } from "./pages/index";
-
+import { Home, Shop, DetailsPage, Login, Signup } from "./pages/index";
 
 import { NavBar, Banner, Footer } from "./components/index";
-
 
 import "./App.css";
 
@@ -17,6 +15,8 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/shop" element={<Shop />} />
           <Route path="/details/:id" element={<DetailsPage />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/signup" element={<Signup />} />
         </Routes>
         <Footer />
       </Browser>
