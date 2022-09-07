@@ -1,7 +1,6 @@
 import React from "react";
 import "./style.css";
 import image from "../../utils/image.png";
-//Users/juriparladore/Desktop/academy/week4/full-stack-proj-webshop/client/src/utils/image.svg
 const Banner = () => {
   return (
     <header className="banner-container">
