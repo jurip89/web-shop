@@ -5,8 +5,7 @@ import { FiShoppingCart } from "react-icons/fi";
 const ButtonCart = () => {
   return (
     <button className="button-cart">
-      <FiShoppingCart />
-      Add To Cart
+      <FiShoppingCart /> &nbsp;&nbsp; Add To Cart
     </button>
   );
 };

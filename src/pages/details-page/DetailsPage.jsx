@@ -4,19 +4,27 @@ import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import { BsFacebook, BsInstagram, BsTwitter } from "react-icons/bs";
-
-
 import { Spinner, BtnCart, BtnFav } from "../../components/index";
 
 const DetailsPage = () => {
   const { id } = useParams();
   const [product, setProduct] = useState();
-  const getData = async (productId) => {
-    const cats = await axios.get(`http://localhost:4000/products/${productId}`);
-    console.log(cats.data);
-    setProduct(cats.data);
-  };
+  const [category, setCategory] = useState();
+ 
   useEffect(() => {
+     const getData = async (productId) => {
+       const cats = await axios.get(
+         `http://localhost:4000/products/${productId}`
+       );
+       console.log(cats.data);
+       setProduct(cats.data);
+       getCategory(cats.data.categoryId);
+     };
+     const getCategory = async (id) => {
+       const cats = await axios.get(`http://localhost:4000/categories/${id}`);
+       console.log(cats.data);
+       setCategory(cats.data);
+     };
     getData(id);
   }, [id]);
 
@@ -30,14 +38,17 @@ const DetailsPage = () => {
             <img className="image" src={product.mainImage} alt="" />
             <div className="content">
               <h2 className="product-title">{product.title}</h2>
-              <p className="product-rating">Review: {product.rating}/5</p>
+              <p className="product-rating-cat">Review: {product.rating}/5</p>
               <button className="button-review">Add Review</button>
               <p className="product-price">€{product.price}</p>
               <p className="product-description">{product.description}</p>
-              <div >
+              <div>
                 <BtnCart />
                 <BtnFav />
               </div>
+              {category && (
+                <p className="cat-share-titles">Categories: {category.title}</p>
+              )}
               <p className="cat-share-titles">
                 Share{" "}
                 <button className="share-buttons">

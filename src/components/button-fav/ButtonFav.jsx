@@ -5,8 +5,8 @@ import { BsHeart } from "react-icons/bs";
 const ButtonFav = () => {
   return (
     <button className="button-fav">
-      <BsHeart /> 
-      Favorite
+      <BsHeart />
+      &nbsp;&nbsp;Favorite
     </button>
   );
 };
