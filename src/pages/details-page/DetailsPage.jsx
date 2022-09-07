@@ -4,6 +4,9 @@ import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import axios from "axios";
 
+import { BsFacebook, BsInstagram, BsTwitter } from "react-icons/bs";
+
+
 import { Spinner, BtnCart, BtnFav } from "../../components/index";
 
 const DetailsPage = () => {
@@ -20,6 +23,7 @@ const DetailsPage = () => {
 
   return (
     <div>
+
       {!product ? (
         <Spinner />
       ) : (
@@ -31,10 +35,10 @@ const DetailsPage = () => {
             <button className="button-review">Add review</button>
             <p className="product-price">€{product.price}</p>
             <p className="product-description">{product.description}</p>
-            <span>
+            <div>
               <BtnCart />
               <BtnFav />
-            </span>
+            </div>
           </div>
           <div className="description">
             <div className="description-panel">
@@ -51,6 +55,7 @@ const DetailsPage = () => {
           </div>
         </>
       )}
+
     </div>
   );
 };

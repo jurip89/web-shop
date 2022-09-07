@@ -37,6 +37,11 @@
   font-size: x-large;
 }
 
+.product-rating {
+  color: #151875;
+  font-size: small
+}
+
 .product-price {
   color: #151875;
 }
@@ -54,7 +59,9 @@
   padding: 1px;
   width: 70px;
   height: 20px;
+
   font-size: x-small;
+
 }
 
 .description-header {
@@ -63,3 +70,15 @@
   width: 100%;
   justify-content: space-between;
 }
+
+
+
+.cat-share-titles {
+  color: #151875
+}
+
+.share-buttons{
+  background-color: white;
+  border: 1px solid white;
+}
+

@@ -9,6 +9,7 @@
   background-color: #0d0e43;
   color: white;
   font-size: medium;
+  justify-content: center;
 }
 
 .categories-footer {
@@ -36,4 +37,15 @@
   width: 20px;
   height: 20px;
   margin: 5%;
+}
+
+.footer-title {
+  color: #8568FF;
+  display:flex;
+  justify-content: center;
+
+}
+
+.footer-span {
+  color: #fff;
 }

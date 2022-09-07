@@ -17,7 +17,12 @@ const Footer = () => {
   return (
     <footer>
       <div className="footer-container">
-        <div className="title-footer">Title</div>
+        <div className="title-footer">
+          <h3 className="footer-title">
+            <span className="footer-span">The</span>
+            <span>Shop</span>
+          </h3>
+        </div>
         <div className="title-footer">
           Categories
           <div className="categories-footer">
@@ -51,15 +56,12 @@ const Footer = () => {
           <button className="button">
             <BsFacebook />
           </button>
-         
           <button className="button">
             <BsInstagram />
           </button>
-        
           <button className="button">
             <BsTwitter />
           </button>
-        
         </div>
       </div>
     </footer>
