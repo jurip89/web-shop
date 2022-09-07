@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./style.css";
 import { NavLink } from "react-router-dom";
 import axios from "axios";
+import { BsFacebook, BsInstagram, BsTwitter } from "react-icons/bs";
 
 const Footer = () => {
   const [categories, setCategories] = useState([]);
@@ -14,8 +15,8 @@ const Footer = () => {
   }, []);
 
   return (
-    <footer className="footer-container">
-      <div>
+    <footer>
+      <div className="footer-container">
         <div className="title-footer">Title</div>
         <div className="title-footer">
           Categories
@@ -30,23 +31,36 @@ const Footer = () => {
         <div className="title-footer">
           My account
           <div className="account-footer">
-            <ul>
-              <NavLink to="/discount" className="links">
-                Discount
-              </NavLink>
-              <NavLink to="/returns" className="links">
-                Returns
-              </NavLink>
-              <NavLink to="/ordershistory" className="links">
-                Orders History
-              </NavLink>
-              <NavLink to="/ordertracking" className="links">
-                Order Tracking
-              </NavLink>
-            </ul>
+            <NavLink to="/discount" className="link">
+              Discount
+            </NavLink>
+            <NavLink to="/returns" className="link">
+              Returns
+            </NavLink>
+            <NavLink to="/ordershistory" className="link">
+              Orders History
+            </NavLink>
+            <NavLink to="/ordertracking" className="link">
+              Order Tracking
+            </NavLink>
           </div>
         </div>
-        <div className="title-footer">Follow Us</div>
+        <div className="title-footer">
+          Follow Us
+          <br />
+          <button className="button">
+            <BsFacebook />
+          </button>
+         
+          <button className="button">
+            <BsInstagram />
+          </button>
+        
+          <button className="button">
+            <BsTwitter />
+          </button>
+        
+        </div>
       </div>
     </footer>
   );
