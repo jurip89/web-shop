@@ -15,9 +15,15 @@ const Login = () => {
     setPassword("");
   };
   return (
-    <form onSubmit={handleSubmit}>
-      <input type="email" placeholder="email" />
-      <input type="password" placeholder="password" />
+    <form className="form-container" onSubmit={handleSubmit}>
+      <label htmlFor="email">
+        E-mail <input id="email" type="email" placeholder="email" />
+      </label>
+
+      <label htmlFor="password">
+        Password <input id="password" type="password" placeholder="password" />
+      </label>
+
       <button type="submit">Log in</button>
     </form>
   );

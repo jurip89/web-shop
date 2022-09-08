@@ -1,0 +1,14 @@
+.offset-panel {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0.2%;
+}
+
+.offset {
+  margin: 0.3%;
+  color: #151875;
+  background-color: white;
+  border-radius: 10px;
+  border: 1px solid #1d3178;
+}
