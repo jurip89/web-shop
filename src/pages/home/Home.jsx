@@ -19,6 +19,7 @@ const Home = () => {
     console.log(prods.data);
     setProducts(prods.data);
   };
+
   const handleClickMore = () => {
     setOffset((prev) => prev + 10);
   };
@@ -28,8 +29,11 @@ const Home = () => {
   useEffect(() => {
     getData();
   }, [offset]);
+
+
   return (
     <div className="home-page">
+      {/* <div>{categories.title}</div> */}
       <div className="products-container">
         {products?.map((el) => (
           <ProductCard key={el.id} data={el} />
