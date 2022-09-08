@@ -1,6 +1,11 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import "./style.css";
+import { BsPerson, BsHeart } from "react-icons/bs";
+import { FiShoppingCart } from "react-icons/fi";
+import { BiSearch } from "react-icons/bi";
+
+
 const NavBar = () => {
   return (
     <nav className="navbar-container">
@@ -23,8 +28,27 @@ const NavBar = () => {
         <NavLink to="/contacts" className="links">
           Contacts
         </NavLink>
+        <div className="box">
+          <input type="text" className="input" name="txt" />
+          <BiSearch className="i" />
+        </div>
       </div>
-      <div className="nav"></div>
+
+      <div className="nav-icons">
+
+          <NavLink to="/login" className="links">
+            <BsPerson />
+          </NavLink>
+         
+          <NavLink to="/shoppingcart" className="links">
+            <FiShoppingCart />
+          </NavLink>
+          
+          <NavLink to="/favorites" className="links">
+            <BsHeart />
+          </NavLink>
+      
+      </div>
     </nav>
   );
 };

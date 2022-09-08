@@ -40,16 +40,18 @@ const DetailsPage = () => {
               <h2 className="product-title">{product.title}</h2>
               <p className="product-rating-cat">Review: {product.rating}/5</p>
               <button className="button-review">Add Review</button>
-              <p className="product-price">€{product.price}</p>
-              <p className="product-description">{product.description}</p>
+              <p className="cat-share-price-titles">€{product.price}</p>
+              <p className="text-prod-description">{product.description}</p>
               <div>
                 <BtnCart />
                 <BtnFav />
               </div>
               {category && (
-                <p className="cat-share-titles">Categories: {category.title}</p>
+                <p className="cat-share-price-titles">
+                  Categories: {category.title}
+                </p>
               )}
-              <p className="cat-share-titles">
+              <p className="cat-share-price-titles">
                 Share{" "}
                 <button className="share-buttons">
                   <BsFacebook />
@@ -71,9 +73,9 @@ const DetailsPage = () => {
                 <h5>Reviews</h5>
               </div>
               <h5 className="title-description">More details</h5>
-              <p className="text-description">{product.description}</p>
-              <h5 className="title-description">Title 2</h5>
-              <p className="text-description">some text.</p>
+              <p className="text-prod-description">{product.description}</p>
+              {/* <h5 className="title-description">Title 2</h5>
+              <p className="text-prod-description">some text.</p> */}
             </div>
           </div>
         </>
