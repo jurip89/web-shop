@@ -14,17 +14,27 @@
   align-items: center;
   display: flex;
   min-width: 45%;
-  max-width: 65%;
+  max-width: 55%;
   margin: auto;
-  border: 1px solid green;
+  /* border: 1px solid green; */
   flex-grow: 1;
   justify-content: space-between;
 }
 
-.nav {
+.nav-search {
+  margin: auto;
+  /* border-radius: 7px; */
+  border: 2px solid white;
+}
+
+.nav-icons {
+  display: flex;
   min-width: 15%;
   border: 1px solid red;
-  margin: auto 0;
+  position: relative;
+  width: 100px;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .links {
@@ -34,4 +44,44 @@
 
 .links.active {
   color: white;
+}
+
+.box {
+  position: relative;
+}
+.input {
+  padding: 10px;
+  width: 15%;
+  height: auto;
+  background: none;
+  border: 1px solid #000;
+  border-radius: 10px;
+  box-sizing: border-box;
+  color: #000;
+  outline: none;
+  transition: 0.5s;
+}
+.box:hover input {
+  width: 70%;
+  background: white;
+  border-radius: 10px;
+}
+.box .i {
+  position: absolute;
+  top: 50%;
+  right: 82%;
+  transform: translate(-50%, -50%);
+  color: #000;
+  transition: 0.2s;
+}
+
+.box:hover input {
+  width: 70%;
+  background: white;
+  border-radius: 10px;
+}
+
+.box:hover .i {
+  opacity: 0;
+  z-index: -1;
 }
