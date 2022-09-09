@@ -5,3 +5,4 @@ export { default as Footer } from "./Footer/Footer.jsx";
 export { default as Spinner } from "./spinner/Spinner";
 export { default as BtnFav } from "./button-fav/ButtonFav";
 export { default as BtnCart } from "./button-cart/ButtonCart";
+
