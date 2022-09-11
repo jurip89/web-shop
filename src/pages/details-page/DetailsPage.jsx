@@ -44,8 +44,8 @@ const DetailsPage = () => {
               <p className="cat-share-price-titles">€{product.price}</p>
               <p className="text-prod-description">{product.description}</p>
               <div>
-                <BtnCart />
-                <BtnFav />
+                  <BtnCart />
+                  <BtnFav />
               </div>
               {category && (
                 <p className="cat-share-price-titles">

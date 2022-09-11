@@ -1,5 +1,5 @@
 import { BrowserRouter as Browser, Route, Routes } from "react-router-dom";
-import { Home, Shop, DetailsPage, Login, Signup } from "./pages/index";
+import { Home, Shop, DetailsPage, Login, Signup, ShoppingCart } from "./pages/index";
 import { NavBar, Banner, Footer } from "./components/index";
 import "./App.css";
 import React, { useState, useEffect } from "react";
@@ -54,6 +54,7 @@ function App() {
           <Route path="/details/:id" element={<DetailsPage />} />
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
+          <Route path="/shoppingcart" element={<ShoppingCart/>} />
         </Routes>
         <Footer />
       </Browser>
