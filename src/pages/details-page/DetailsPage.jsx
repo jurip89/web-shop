@@ -4,7 +4,7 @@ import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import { BsFacebook, BsInstagram, BsTwitter } from "react-icons/bs";
-import { Spinner, BtnCart, BtnFav } from "../../components/index";
+import { Spinner, BtnCart, BtnFav, Star } from "../../components/index";
 
 const DetailsPage = () => {
   const { id } = useParams();
@@ -38,13 +38,14 @@ const DetailsPage = () => {
             <img className="image" src={product.mainImage} alt="" />
             <div className="content">
               <h2 className="product-title">{product.title}</h2>
-              <p className="product-rating-cat">Review: {product.rating}/5</p>
+              <p className="product-rating-cat">Review: {product.rating}/5 </p>
+              <Star rating={product.rating} />
               <button className="button-review">Add Review</button>
               <p className="cat-share-price-titles">€{product.price}</p>
               <p className="text-prod-description">{product.description}</p>
               <div>
-                <BtnCart />
-                <BtnFav />
+                  <BtnCart />
+                  <BtnFav />
               </div>
               {category && (
                 <p className="cat-share-price-titles">

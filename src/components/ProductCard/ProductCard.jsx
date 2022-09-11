@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import { BtnFav, BtnCart } from "../index";
 import "./style.css";
 
@@ -16,7 +16,15 @@ const ProductCard = ({ data }) => {
 
         <p>Price: € {data.price}</p>
         <p>Rating: {data.rating}/5</p>
-        <BtnCart />
+        <Link to={{
+                pathname:"/shoppingcart",
+          }} 
+                state={
+                  data
+                }
+          >
+          <BtnCart />
+        </Link>
         <BtnFav />
       </div>
     </div>
